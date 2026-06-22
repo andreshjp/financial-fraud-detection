@@ -14,6 +14,8 @@ The final ensemble model combines the probability outputs of all five base model
 
 ## Dataset
 
+The full dataset (769MB) exceeds GitHub's file size limit and is not included in this repository. A sample of 10,000 rows (`financial_data_sample.csv`) is provided for reference and to allow running the script locally on a reduced scale. The full dataset is available upon request.
+
 Synthetic financial transaction dataset containing features including:
 
 - Transaction amount, type, and payment channel
@@ -98,8 +100,8 @@ All models were trained with 5-fold cross-validation optimizing AUC-ROC.
 
 ```
 financial-fraud-detection/
-├── analysis.R              # Full pipeline script
-└── financial_data.csv      # Transaction dataset
+├── analysis.R                      # Full pipeline script
+└── financial_data_sample.csv       # Sample dataset (10,000 rows — see Data section)
 ```
 
 ---
